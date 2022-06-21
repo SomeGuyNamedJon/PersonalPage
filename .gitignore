@@ -1,4 +1,5 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# database connection
+# database stuff
+./dbadmin
 ./functions/database.php
