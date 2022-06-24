@@ -5,7 +5,8 @@
     <div class="row">
         <div class="col" align="center">
             <br>
-            <img src="./assets/images/utsa_logo.png" alt="UTSA" height="60">
+            <!-- img src="./assets/images/utsa_logo.png" alt="UTSA" height="60" -->
+            <img src="https://logodix.com/logo/1593022.png" alt="UTSA" height="60">
             <h3>UTSA, Texas</h3>
             <h3>Graduated May 2022</h3>
             <h4>BACHELOR\'S OF COMPUTER SCIENCE</h4>
@@ -29,7 +30,8 @@
     <div class="row">
         <div class="col" align="center">
             <br>
-            <img src="./assets/images/sac_logo.png" alt="Alamo Colleges" height="60">
+            <!-- img src="./assets/images/sac_logo.png" alt="Alamo Colleges" height="60" -->
+            <img src="https://media.badgr.com/uploads/issuers/issuer_logo_45fd95d6-6386-4846-8e35-cccde69e0ac6.png" alt="Alamo Colleges" height="60">
             <h3>San Antonio College, Texas</h3>
             <h3>Graduated May 2017</h3>
             <h4>ASSOCIATE OF APPLIED SCIENCE IN COMPUTER PROGRAMMING</h4>
@@ -60,8 +62,8 @@
     <div class="row"> 
         <div class="col" align="center">
             <br>
-            <img src="./assets/images/Roosevelt_logo.png" alt="TR" height="60">
-            <!-- <img src="https://www.neisd.net/cms/lib/TX02215002/Centricity/Domain/868/ETA_Roosevelt_15years_FINAL.png" alt="TR/ETA" height="60"> -->
+            <!-- img src="./assets/images/Roosevelt_logo.png" alt="TR" height="60" -->
+            <img src="https://www.neisd.net/cms/lib/TX02215002/Centricity/Template/GlobalAssets/images///logos/Roosevelt-Official-Logo.png" alt="TR" height="60">
             <h3>Theodore Roosevelt High School, Texas</h3>
             <h3>Graduated June 2013</h3>
             <h4>HIGH SCHOOL DIPLOMA</h4>

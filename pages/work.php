@@ -4,7 +4,8 @@
         <div class="row">
             <div class="col" align="center">
                 <br>
-                <img src="./assets/images/ups_logo.png" alt="UPS" height="60">
+                <!-- img src="./assets/images/ups_logo.png" alt="UPS" height="60" -->
+                <img src="https://logos-download.com/wp-content/uploads/2016/08/UPS_logo_logotype.png" alt="UPS" height="60">
                 <h3>UPS Warehouse</h3>
                 <h4>Jul 2020 - Jan 2021 | San Antonio, TX</h4>
             </div>
@@ -26,7 +27,8 @@
         <div class="row">
             <div class="col" align="center">
                 <br>
-                <img src="./assets/images/seaworld_logo.png" alt="SeaWorld" height="60">
+                <!-- img src="./assets/images/seaworld_logo.png" alt="SeaWorld" height="60" -->
+                <img src="https://i1.wp.com/www.concretepavements.org/wp-content/uploads/2016/02/SeaWorld_San_Antonio_logo.svg_.png?ssl=1" alt="SeaWorld" height="60">
                 <h3>SeaWorld San Antonio</h3>
                 <h4>Jun 2019 - Aug 2019 | San Antonio, TX</h4>
             </div>
@@ -67,7 +69,8 @@
         <div class="row">
             <div class="col" align="center">
                 <br>
-                <img src="./assets/images/billmillersbbq_logo.png" alt="BMBBQ" height="60">
+                <!-- img src="./assets/images/billmillersbbq_logo.png" alt="BMBBQ" height="60" -->
+                <img src="https://2rq17orsr961kf85lee3hka9-wpengine.netdna-ssl.com/wp-content/themes/bill-miller-theme/img/main-logo.png" alt="BMBBQ" height="60">
                 <h3>Bill Miller\'s BBQ</h3>
                 <h4>Mar 2014 - Aug 2014 | San Antonio, TX</h4>
             </div>
@@ -87,7 +90,8 @@
         <div class="row">
             <div class="col" align="center">
                 <br>
-                <img src="./assets/images/bolnersfiesta_logo.png" alt="Fiesta" height="60">
+                <!-- img src="./assets/images/bolnersfiesta_logo.png" alt="Fiesta" height="60" -->
+                <img src="https://www.fiestaspices.com/wp-content/uploads/2015/03/logo.png" alt="Fiesta" height="60">
                 <h3>Bolner\'s Fiesta Products</h3>
                 <h4>Feb 2014 - Mar 2014 | San Antonio, TX</h4>
             </div>
