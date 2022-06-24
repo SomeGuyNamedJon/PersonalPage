@@ -35,9 +35,6 @@
     if($err != "")
         echo 'Error:'.$err;
     else{
-        $fname = addslashes($fname);
-        $lname = addslashes($lname);
-        $comment = addslashes($comment);
         $phone = null;
         $method = 0;
         $email = "COMMENT_ONLY";
@@ -47,8 +44,8 @@
         
         # prepare and execute statement
         $stmt = $dblink->prepare($sql);
-	    $stmt->bind_param("sssssis", $fname, $lname, $email, $phone, $dob, $method, $comment);
-	    $stmt->execute() or die("Error: SQL Failed: $sql");
+	$stmt->bind_param("sssssis", $fname, $lname, $email, $phone, $dob, $method, $comment);
+	$stmt->execute() or die("Error: SQL Failed: $sql");
      
         echo "Success";
     }

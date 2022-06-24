@@ -62,9 +62,6 @@
     if($err != "")
         echo 'Error:'.$err;
     else{
-        $fname = addslashes($fname);
-        $lname = addslashes($lname);
-        $comment = addslashes($comment);
         $phone = preg_replace('[\D]', '', $phone);
         $method = ($contact == "Email") ? 1 : 0;
         $sql = "insert into `contact_info` (`fname`,`lname`,`email`,`phone`,`dob`,`method`,`comment`) 
@@ -73,7 +70,7 @@
         # prepare and execute statement
         $stmt = $dblink->prepare($sql);
         $stmt->bind_param("sssssis", $fname, $lname, $email, $phone, $dob, $method, $comment);
-	    $stmt->execute() or die("Error: SQL Failed: $sql");
+	$stmt->execute() or die("Error: SQL Failed: $sql");
 	   
         echo "Success";
     }
