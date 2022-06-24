@@ -43,10 +43,13 @@
         $email = "COMMENT_ONLY";
         $dob = $today;
         $sql = "insert into `contact_info` (`fname`,`lname`,`email`,`phone`,`dob`,`method`,`comment`) 
-            values ('$fname', '$lname', '$email', '$phone', '$dob', $method, '$comment')";
-
-        $dblink->query($sql) or die("Error: SQL Failed: $sql");
-
+        	values (?, ?, ?, ?, ?, ?, ?)";
+        
+        # prepare and execute statement
+        $stmt = $dblink->prepare($sql);
+	    $stmt->bind_param("sssssis", $fname, $lname, $email, $phone, $dob, $method, $comment);
+	    $stmt->execute() or die("Error: SQL Failed: $sql");
+     
         echo "Success";
     }
 
