@@ -5,12 +5,19 @@
         <link rel="stylesheet" href="./assets/css/main.css">
         <link rel="stylesheet" href="./assets/css/bootstrap-grid.css">
         <script src="assets/js/jquery-3.5.1.js"></script>
-        <title>Jonathan Villarreal</title>
+	<title>Jonathan Villarreal</title>
     </head>
     <body>
         <div class="container-fluid">
-            <div class="row">
-                <h1 class="title">Jonathan Villarreal</h1>
+	    <div class="row justify-content-center">
+		<div class="col-sm-1">
+			<div class="iconContainer">
+				<img class="favIcon" src="favicon.ico" />
+			</div>
+		</div>
+		<div class="col-6">
+			<h1 class="title">Jonathan Villarreal</h1>
+		</div>
             </div>
             <script>
                 function updateContent(page){
@@ -43,6 +50,7 @@
                 
             </script>
 
+	    <br>
             <?php
                 include("./components/navbar.php");
             ?>            

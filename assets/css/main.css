@@ -59,9 +59,25 @@ dt {
 }*/
 
 .title {
+    position: relative;
     font-size: 50px;
-    text-align: center;
+    text-align: left;
     color: #744fca;
+    z-index: 1;
+}
+
+.iconContainer {
+    position: relative;
+    display: inline-block;
+    top: 1.5vw;
+    left: 1.5vw;
+    z-index: 0;
+}
+
+.favIcon {
+    height: 75px;
+    display: inline-block;
+    text-align: center;
 }
 
 .foot {
@@ -100,6 +116,7 @@ dt {
 }
 
 .navBar {
+    position: relative;
     text-align: center;
     background-color: #673ab7;
     border-radius: 7px;
