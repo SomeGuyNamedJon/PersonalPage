@@ -48,7 +48,7 @@
         <div class="row">
             <div class="col" align="center">
                 <br>
-                <img src="./assets/images/maxfoodmart_logo.png" alt="MaxFood" height="60">
+                <img src="./assets/images/maxfoodmart_logo_trans.png" alt="MaxFood" height="60">
                 <h3>Max Food Mart</h3>
                 <h4>Dec 2017 - Mar 2018 | San Antonio, TX</h4>
             </div>
