@@ -50,7 +50,6 @@
                 
             </script>
 
-	    <br>
             <?php
                 include("./components/navbar.php");
             ?>            
