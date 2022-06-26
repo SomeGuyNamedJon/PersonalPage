@@ -36,7 +36,7 @@
         echo 'Error:'.$err;
     else{
         $phone = null;
-        $method = 0;
+        $method = null;
         $email = "COMMENT_ONLY";
         $dob = $today;
         $sql = "insert into `contact_info` (`fname`,`lname`,`email`,`phone`,`dob`,`method`,`comment`) 
