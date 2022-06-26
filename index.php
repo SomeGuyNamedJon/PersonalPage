@@ -15,7 +15,7 @@
 				<img class="favIcon" src="favicon.ico" />
 			</div>
 		</div>
-		<div class="col-6">
+		<div class="col-5">
 			<h1 class="title">Jonathan Villarreal</h1>
 		</div>
             </div>

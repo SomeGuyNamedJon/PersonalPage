@@ -60,22 +60,23 @@ dt {
 
 .title {
     position: relative;
-    font-size: 50px;
+    font-size: max(25px, 3.5vw);
     text-align: left;
     color: #744fca;
+    text-shadow: 4px 6px #222;
     z-index: 1;
 }
 
 .iconContainer {
     position: relative;
     display: inline-block;
-    top: 1.5vw;
-    left: 2.5vw;
+    top: 1.25vw;
+    left: 4vw;
     z-index: 0;
 }
 
 .favIcon {
-    height: 75px;
+    height: 6vw;
     display: inline-block;
     text-align: center;
 }
