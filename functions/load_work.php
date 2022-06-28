@@ -4,7 +4,6 @@
     $sql = "select * from `work_entries`";
     $result = $dblink->query($sql) or die("Something went wrong with $sql");
 
-    echo '<br>';
     if($result->num_rows == 0){
         echo '<div class=\"row justify-content-center\">
                 <p class=\"help-block comment-help col-11\">Nothing to see here</p>
@@ -17,7 +16,7 @@
         foreach($entries as $key => $entry){
             $id = $entry['id'];
             $logo = $entry['logo'];
-            $logoSize = 60;
+            $logoSize = 70;
             $name = $entry['name'];
             $location = $entry['location'];
             $startDate = date("M Y", strtotime($entry['start_dt']));
@@ -25,7 +24,8 @@
             $title = $entry['title'];
             $duties = $entry['duties'];
 
-            echo "<div class=\"row\">
+            echo "<br>
+                <div class=\"row\">
                     <div class=\"col\" align=\"center\">
                         <img src=\"$logo\" alt=\"$name Logo\" height=\"$logoSize\" />
                         <h3>$name</h3>

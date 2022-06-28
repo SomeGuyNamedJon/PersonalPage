@@ -4,7 +4,6 @@
     $sql = "select * from `school_entries`";
     $result = $dblink->query($sql) or die("Something went wrong with $sql");
 
-    echo '<br>';
     if($result->num_rows == 0){
         echo '<div class=\"row justify-content-center\">
                 <p class=\"help-block comment-help col-11\">Nothing to see here</p>
@@ -17,6 +16,7 @@
         foreach($entries as $key => $entry){
             $id = $entry['id'];
             $logo = $entry['logo'];
+            $logoSize = 70;
             $name = $entry['name'];
             $state = $entry['state'];
             $gradDate = date("M Y", strtotime($entry['graduated']));
@@ -27,7 +27,7 @@
             echo "<div class=\"row\">
             <div class=\"col\" align=\"center\">
                 <br>
-                <img src=\"$logo\" alt=\"$name Logo\" height=\"60\">
+                <img src=\"$logo\" alt=\"$name Logo\" height=\"$logoSize\">
                 <h3>$name, $state</h3>
                 <h3>Graduated $gradDate</h3>
                 <h4>$degree</h4>";
