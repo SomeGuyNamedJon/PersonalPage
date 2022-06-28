@@ -236,3 +236,12 @@ dt {
     padding-right: 2em;
     text-align: right !important;
 }
+
+#neofetch {
+    background-color: #222;
+    border-radius: 5px;
+}
+
+#myFace {
+    border-radius: 5px;
+}
