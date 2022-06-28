@@ -9,7 +9,8 @@
             <img src="https://logodix.com/logo/1593022.png" alt="UTSA" height="60">
             <h3>UTSA, Texas</h3>
             <h3>Graduated May 2022</h3>
-            <h4>BACHELOR\'S OF COMPUTER SCIENCE</h4>
+	    <h4>BACHELOR\'S OF COMPUTER SCIENCE</h4>
+            <h4>3.31 GPA</h4>
         </div>
         <div class="col">
             <dl>
@@ -35,7 +36,8 @@
             <h3>San Antonio College, Texas</h3>
             <h3>Graduated May 2017</h3>
             <h4>ASSOCIATE OF APPLIED SCIENCE IN COMPUTER PROGRAMMING</h4>
-        </div>
+            <h4>3.236 GPA</h4>
+	</div>
         <div class="col">    
             <dl>
                 <dt>Relevant Courses:</dt>
