@@ -1,5 +1,4 @@
-<?php
-    echo '
+<html>
     <div class="row">
         <div class="col">
             <h2>My Face</h2>
@@ -38,5 +37,5 @@
             <li>Excellent communication skills</li>
             </ul>
         </div>
-    </div>';
-?>
+    </div>
+</html>

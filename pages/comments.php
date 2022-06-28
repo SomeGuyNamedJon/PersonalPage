@@ -1,7 +1,7 @@
 <script src="assets/js/jquery-3.5.1.js"></script>
-<?php
-    echo '<br><div id="output"></div>';
-?>
+
+<br><div id="output"></div>
+
 <script>
     function loadComments(){
         $.ajax({
