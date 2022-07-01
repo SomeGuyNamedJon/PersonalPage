@@ -1,3 +1,4 @@
+# Function long depreacted, just keep around for refernce
 <?php
     function redirect($uri)
     { ?>
