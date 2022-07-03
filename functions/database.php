@@ -1,8 +1,16 @@
 <?php
+
+    //get credentials from file
+    $keyfile = file_get_contents("../assets/credentials.json");
+    $credentials = json_decode($keyfile, true);
+
     function dbconnect($db){
-        $user="webkit";
-        $password="A4r5XPUST5wW";
-        $hostname="localhost";
+        global $credentials;
+
+        $user     = $credentials["user"];
+        $password = $credentials["password"];
+        $hostname = $credentials["hostname"];
+
         return new mysqli($hostname, $user, $password, $db);
     }
 ?>

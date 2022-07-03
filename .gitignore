@@ -2,4 +2,4 @@
 
 # database stuff
 dbadmin
-./functions/database.php
+assets/credentials.json
