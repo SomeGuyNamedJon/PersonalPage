@@ -7,9 +7,6 @@
 This is a spruced up capstone assignment for my Web Technologies class during my final semester at Uni.
 <br />
 <br />
-Obviously it's missing a file for database configuration for security reasons.
-<br />
-<br />
 It's a small project which is of use to no one but me, but I figure I should have something up here that isn't the god awful mess of my last school project hosted here.
 <br />
 <br />
