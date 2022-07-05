@@ -1,13 +1,20 @@
 <html>
     <body>
     <script>
+        function updateSubBar(page){  
+            $.ajax({
+                type:'post',
+                url:'../components/subbar.php',
+                data:{active : page},
+                success:function(data){
+                    $('#subBar').html(data);
+                }
+            })
+        }
+
         function updateSubContent(page){
             sessionStorage.setItem("submitPage", page);
-
-            document.getElementById("CommentForm").classList.remove("active");
-            document.getElementById("InfoForm").classList.remove("active");
-            
-            document.getElementById(page+"Form").classList.add("active");
+            updateSubBar(page);
 
             $.ajax({
                 type:'post',
@@ -28,9 +35,7 @@
     </script>
     <br>
     <div id="container">
-        <?php
-            include("../components/subbar.php");
-        ?>    
+        <div id="subBar"></div>    
         <div id="subContent"></div>
         <?php
             include("../components/contactLinks.php");

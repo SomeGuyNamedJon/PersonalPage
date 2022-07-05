@@ -20,22 +20,25 @@
 		</div>
             </div>
             <script>
-                function updateContent(page){
-                    sessionStorage.setItem("page", page);
-
+                function updateNavBar(page){
                     $.ajax({
                         type:'post',
-                        url:'./pages/'+page+'.php',
+                        url:'components/navbar.php',
+                        data:{active : page},
                         success:function(data){
-                           
-                            document.getElementById("home").classList.remove("active");
-                            document.getElementById("school").classList.remove("active");
-                            document.getElementById("work").classList.remove("active");
-                            document.getElementById("contact").classList.remove("active");
-                            document.getElementById("comments").classList.remove("active");
-                            
-                            document.getElementById(page).classList.add("active");
-                            
+                            $('#navBar').html(data);
+                        }
+                    })
+                }
+
+                function updateContent(page){
+                    sessionStorage.setItem("page", page);
+                    updateNavBar(page);
+                    
+                    $.ajax({
+                        type:'post',
+                        url:'pages/'+page+'.php',
+                        success:function(data){
                             $('#mainContent').html(data);
                         }
                     })
@@ -50,9 +53,7 @@
                 
             </script>
 
-            <?php
-                include("./components/navbar.php");
-            ?>            
+            <div id="navBar"></div>          
             <div class="container" id="mainContent"></div>
             <br>
             <div class="row">
