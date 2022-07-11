@@ -58,7 +58,10 @@
                 <p class="help-block" id="commentHelp"></p>
             </div>';
         
-        echo '<button class="btn" id="submitBtn">Submit</button>';
+        echo '<button class="btn" id="submitBtn">
+            <i class="fa-solid fa-circle-check"></i>
+            Submit
+        </button>';
         echo '<div class="ans-box" id="values"></div>';
 
     echo '</div>';
