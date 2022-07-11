@@ -1,7 +1,7 @@
 <?php
     include('database.php');
     $dblink=dbconnect('web_tech');
-    $sql = "select * from `work_entries`";
+    $sql = "select * from `work_entries` order by `id` desc";
     $result = $dblink->query($sql) or die("Something went wrong with $sql");
 
     if($result->num_rows == 0){
