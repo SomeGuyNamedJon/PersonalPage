@@ -100,8 +100,8 @@ dt {
     color: azure;
     font-weight: bold;
     text-decoration: none;
-    width: 12vw;
-    border-radius: 5px;
+    width: 10vw;
+    border-radius: 25px;
 }
 
 .subButton {
@@ -121,7 +121,7 @@ dt {
     position: relative;
     text-align: center;
     background-color: #673ab7;
-    border-radius: 7px;
+    border-radius: 25px;
 }
 
 .subBar {

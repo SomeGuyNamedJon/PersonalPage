@@ -20,31 +20,31 @@
         <div class="row navBar">
                 <div class="col">
                     <a id="home" href="#" class="navButton '.$home.'" onclick="updateContent(\'home\');event.preventDefault()">
-                        <i class="fa-solid fa-house"></i>
+                        <i class="fa-solid fa-house"></i><br>
                         Home
                     </a>
                 </div>
                 <div class="col">
                     <a id="school" href="#" class="navButton '.$school.'" onclick="updateContent(\'school\');event.preventDefault()">
-                        <i class="fa-solid fa-graduation-cap"></i>
+                        <i class="fa-solid fa-graduation-cap"></i><br>
                         School
                     </a>
                 </div>
                 <div class="col">
                     <a id="work" href="#" class="navButton '.$work.'" onclick="updateContent(\'work\');event.preventDefault()">
-                        <i class="fa-solid fa-briefcase"></i>
+                        <i class="fa-solid fa-briefcase"></i><br>
                         Work
                     </a>
                 </div>
                 <div class="col">
                     <a id="contact" href="#" class="navButton '.$contact.'" onclick="updateContent(\'contact\');event.preventDefault()">
-                        <i class="fa-solid fa-address-book"></i>    
+                        <i class="fa-solid fa-address-book"></i><br>    
                         Contact
                     </a>
                 </div>
                 <div class="col">
                     <a id="comments" href="#" class="navButton '.$comments.'" onclick="updateContent(\'comments\');event.preventDefault()">
-                        <i class="fa-solid fa-comments"></i>    
+                        <i class="fa-solid fa-comments"></i><br>    
                         Comments
                     </a>
                 </div>
