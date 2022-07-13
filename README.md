@@ -1,7 +1,7 @@
 ![](https://cdn.discordapp.com/attachments/687235721127526412/989901538350747708/favicon.ico)
 
 # PersonalPage
-### This is repo is my personal web page hosted at http://jonathanvillarreal.my.to
+### This is repo is my personal web page hosted at https://jonathanvillarreal.dev
 
 ## About:
 This is a spruced up capstone assignment for my Web Technologies class during my final semester at Uni.
