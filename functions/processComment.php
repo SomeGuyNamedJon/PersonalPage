@@ -13,8 +13,8 @@
     $today = date("Y-m-d");
 
     if($anon){
-        $fname = "Anonymous";
-        $lname = "Anon";
+        $fname = null;
+        $lname = null;
     }
     else {
         if($fname == "")

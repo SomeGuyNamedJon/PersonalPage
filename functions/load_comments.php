@@ -21,7 +21,11 @@
                 echo '<p>'.$comment.'</p>';
                 echo '</div>';
                 echo '</div>';
-                echo '<p class="comment label">- '.$fname.' '.$lname[0].'.</p>';
+
+                if($fname != null)
+                    echo '<p class="comment label">- '.$fname.' '.$lname[0].'.</p>';
+                else
+                    echo '<p class="comment label">- Anonymous</p>';
             }
         }
     }
