@@ -6,3 +6,6 @@ assets/credentials.json
 
 # google verification
 google*.html
+
+# testing page
+test/*
