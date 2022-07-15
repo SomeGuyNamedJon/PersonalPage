@@ -42,11 +42,11 @@
                 <div class="row">
                     <div class="col" align="center">
                         <input class="form-radio" type="radio" id="contact-Email" name="contact" value="Email">
-                        <label for="contact-Email">Email</label>
+                        <label for="contact-Email"><i class="fa-solid fa-envelope"></i> Email</label>
                     </div>
                     <div class="col" align="center">
                         <input class="form-radio" type="radio" id="contact-Phone" name="contact" value="Phone">
-                        <label for="contact-Phone">Phone</label>
+                        <label for="contact-Phone"><i class="fa-solid fa-phone"></i> Phone</label>
                     </div>
                 </div>
                 <p class="help-block" id="contactHelp"></p>        

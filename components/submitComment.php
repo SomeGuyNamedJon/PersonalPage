@@ -19,12 +19,6 @@
                 <p class="help-block" id="lnameHelp"></p>
             </div>';
 
-        echo '<div id="commentBox">
-                <label>Comment</label>
-                <textarea class="form-input" id="comment" name="comment" rows="10"></textarea>
-                <p class="help-block" id="commentHelp"></p>
-            </div>';
-
         echo '<div id="anonBox">
                 <label>Anonymous?</label>
                 <div class="row">
@@ -33,6 +27,12 @@
                         <label for="anon">Yes</label>
                     </div>
                 </div>
+            </div><br>';
+
+        echo '<div id="commentBox">
+                <label>Comment</label>
+                <textarea class="form-input" id="comment" name="comment" rows="10"></textarea>
+                <p class="help-block" id="commentHelp"></p>
             </div>';
         
         echo '<button class="btn" id="submitBtn">
@@ -61,10 +61,7 @@ $('#anonStatus').on('click', function() {
         fnameInput.disabled = false;
         lnameInput.disabled = false;
     }
-
-    console.log(anonState);
-}
-);
+});
 
 $('#submitBtn').on('click',function(){
     try{
