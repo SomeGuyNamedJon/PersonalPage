@@ -147,7 +147,7 @@ dt {
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    color:rgb(200, 200, 200);
+    color: #fff;
     background-color: #2b2a33;
     border: 2px solid #744fca;
     border-radius: 4px;
@@ -157,6 +157,7 @@ dt {
 .form-input:disabled {
     background-color: #444;
     border: 2px dotted #a0a0a0;
+    color: #909090;
 }
 
 .form-input:focus, .form-select:focus{
