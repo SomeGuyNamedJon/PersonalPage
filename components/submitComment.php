@@ -45,6 +45,27 @@
 ?>
 
 <script>
+$('#anonStatus').on('click', function() {
+    try{
+        var anonState = document.querySelector('input[name="anonStatus"]:checked').value;
+    }catch(err){
+        var anonState = null;
+    }
+    var fnameInput = document.getElementById("fname");
+    var lnameInput = document.getElementById("lname");
+
+    if(anonState){
+        fnameInput.disabled = true;
+        lnameInput.disabled = true;
+    }else{
+        fnameInput.disabled = false;
+        lnameInput.disabled = false;
+    }
+
+    console.log(anonState);
+}
+);
+
 $('#submitBtn').on('click',function(){
     try{
         var anonymous = document.querySelector('input[name="anonStatus"]:checked').value;
