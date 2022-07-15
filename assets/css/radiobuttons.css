@@ -33,7 +33,7 @@ input + svg {
 .form-radio:focus + svg,
 .form-check:hover + svg,
 .form-check:checked + svg {
-  fill: rebeccapurple;
+  fill: #845fda;
 }
 
 input.form-check {
