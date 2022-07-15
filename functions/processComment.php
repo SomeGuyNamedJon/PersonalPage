@@ -51,7 +51,7 @@
         
         # prepare and execute statement
         $stmt = $dblink->prepare($sql);
-	    $stmt->bind_param("sssssis", $fname, $lname, $email, $phone, $dob, $method, $comment);
+	    $stmt->bind_param("sssssss", $fname, $lname, $email, $phone, $dob, $method, $comment);
 	    $stmt->execute() or die("Error: SQL Failed: $sql");
      
         echo "Success";

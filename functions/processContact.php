@@ -14,7 +14,6 @@
 
     $invalidRegex = "/^.*[%*:;$].*$/";
     $emailRegex = "/^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/";
-    //$phoneRegex = "/^\d\d\d-\d\d\d-\d\d\d\d$/";
     $phoneRegex = "/^(\+1)?(-|\.)?(\([0-9]{3}\)|[0-9]{3})(-|\.)?[0-9]{3}(-|\.)?[0-9]{4}$/";
     $today = date("Y-m-d");
 
@@ -56,21 +55,24 @@
     if($contact == "")
         $err .= "ContactNull";
     
-    if(preg_match($invalidRegex, $comment))
-        $err .= "CommentInvalid";
+    if($comment == "")
+        $comment = null;
+    else{
+        if(preg_match($invalidRegex, $comment))
+            $err .= "CommentInvalid";
+    }
 
     if($err != "")
         echo 'Error:'.$err;
     else{
         $phone = preg_replace('[\D]', '', $phone);
-        $method = ($contact == "Email") ? 1 : 0;
         $sql = "insert into `contact_info` (`fname`,`lname`,`email`,`phone`,`dob`,`method`,`comment`) 
             values (?, ?, ?, ?, ?, ?, ?)";
 
         # prepare and execute statement
         $stmt = $dblink->prepare($sql);
         $stmt->bind_param("sssssss", $fname, $lname, $email, $phone, $dob, $contact, $comment);
-	$stmt->execute() or die("Error: SQL Failed: $sql");
+	    $stmt->execute() or die("Error: SQL Failed: $sql");
 	   
         echo "Success";
     }
