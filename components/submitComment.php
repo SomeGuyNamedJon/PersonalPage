@@ -24,6 +24,16 @@
                 <textarea class="form-input" id="comment" name="comment" rows="10"></textarea>
                 <p class="help-block" id="commentHelp"></p>
             </div>';
+
+        echo '<div id="anonBox">
+                <label>Anonymous?</label>
+                <div class="row">
+                    <div class="col"> 
+                        <input class="form-check" type="checkbox" id="anonStatus" name="anon" value="anonymous">
+                        <label for="anon">Yes</label>
+                    </div>
+                </div>
+            </div>';
         
         echo '<button class="btn" id="submitBtn">
             <i class="fa-solid fa-circle-check"></i>    
@@ -45,6 +55,7 @@ $('#submitBtn').on('click',function(){
         'fname' : document.getElementById('fname').value,
         'lname' : document.getElementById('lname').value,
         'comment' : document.getElementById('comment').value,
+        'anonymous' : document.getElementById('anonStatus').value
     }
     $.ajax({
         type:'post',

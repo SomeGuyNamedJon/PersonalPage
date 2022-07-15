@@ -6,23 +6,30 @@
     $fname = $_POST['fname'];
     $lname = $_POST['lname'];
     $comment = $_POST['comment'];
+    $anon = $_POST['anonymous'];
     $err = "";
 
     $invalidRegex = "/^.*[%*:;$].*$/";
     $today = date("Y-m-d");
 
-    if($fname == "")
-        $err .= "FnameNull";
-    else {
-        if(preg_match($invalidRegex, $fname))
-            $err .= "FnameInvalid";
+    if($anon == "anonymous"){
+        $fname = "Anonymous";
+        $lname = "Anon";
     }
-
-    if($lname == "")
-        $err .= "LnameNull";
     else {
-        if(preg_match($invalidRegex, $lname))
-            $err .= "LnameInvalid";
+        if($fname == "")
+            $err .= "FnameNull";
+        else {
+            if(preg_match($invalidRegex, $fname))
+                $err .= "FnameInvalid";
+        }
+
+        if($lname == "")
+            $err .= "LnameNull";
+        else {
+            if(preg_match($invalidRegex, $lname))
+                $err .= "LnameInvalid";
+        }
     }
 
     if($comment == ""){
