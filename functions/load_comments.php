@@ -16,10 +16,12 @@
             $comment = $entry['comment'];
 
             if($comment != ''){
-                echo '<div class="row">';
-                echo '<p class="comment">'.$comment.'</p>';
-                echo '<p class="comment label">- '.$fname.' '.$lname[0].'.</p>';
+                echo '<div class="comment row justify-content-center">';
+                echo '<div class="col-11">';    
+                echo '<p>'.$comment.'</p>';
                 echo '</div>';
+                echo '</div>';
+                echo '<p class="comment label">- '.$fname.' '.$lname[0].'.</p>';
             }
         }
     }

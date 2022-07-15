@@ -1,6 +1,6 @@
 <script src="assets/js/jquery-3.5.1.js"></script>
 
-<br><div id="output"></div>
+<br><div id="output" class="container-fluid"></div>
 
 <script>
     function loadComments(){
