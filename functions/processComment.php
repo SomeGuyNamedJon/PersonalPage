@@ -12,7 +12,7 @@
     $invalidRegex = "/^.*[%*:;$].*$/";
     $today = date("Y-m-d");
 
-    if($anon == "anonymous"){
+    if($anon == "true"){
         $fname = "Anonymous";
         $lname = "Anon";
     }

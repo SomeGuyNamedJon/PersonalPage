@@ -29,7 +29,7 @@
                 <label>Anonymous?</label>
                 <div class="row">
                     <div class="col"> 
-                        <input class="form-check" type="checkbox" id="anonStatus" name="anon" value="anonymous">
+                        <input class="form-check" type="checkbox" id="anonStatus" name="anonStatus">
                         <label for="anon">Yes</label>
                     </div>
                 </div>
@@ -47,15 +47,15 @@
 <script>
 $('#submitBtn').on('click',function(){
     try{
-        var contact = document.querySelector('input[name="contact"]:checked').value;
+        var anonymous = document.querySelector('input[name="anonStatus"]:checked').value;
     }catch(err){
-        var contact = null;
+        var anonymous = null;
     }
     var dataArr = {
         'fname' : document.getElementById('fname').value,
         'lname' : document.getElementById('lname').value,
         'comment' : document.getElementById('comment').value,
-        'anonymous' : document.getElementById('anonStatus').value
+        'anonymous' : anonymous
     }
     $.ajax({
         type:'post',
@@ -77,6 +77,7 @@ $('#submitBtn').on('click',function(){
 
             fnameHelp.innerHTML = "";
             lnameHelp.innerHTML = "";
+            commentHelp.innerHTML = "";
             successBox.innerHTML = "";
 
             if(data.includes("Error")){
