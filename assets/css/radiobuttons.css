@@ -1,0 +1,42 @@
+
+
+/*
+* Pure CSS - SVG Radio Selector Buttons
+* by Nikki Pantony // @nikkipantony // nikkipantony.com 
+*/
+
+svg {
+  fill: rgb(242, 242, 242);
+  height: 2rem;
+  width: 2rem;
+  margin: 0.2rem;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}
+
+input[type="radio"] + svg,
+input[type="checkbox"] + svg {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+input + svg {
+  cursor: pointer;
+}
+
+.form-radio:hover + svg,
+.form-radio:checked + svg,
+.form-radio:focus + svg,
+.form-check:hover + svg,
+.form-check:checked + svg {
+  fill: rebeccapurple;
+}
+
+input.form-check {
+  width: 2rem;
+  height: 2rem;
+}
