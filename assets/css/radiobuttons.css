@@ -29,14 +29,14 @@ input + svg {
 }
 
 .form-radio:hover + svg,
-.form-radio:checked + svg,
 .form-radio:focus + svg,
 .form-check:hover + svg {
   fill: #845fda;
 }
 
+.form-radio:checked + svg,
 .form-check:checked + svg {
-  fill: #673ab7;
+  fill: #6538b5;
 }
 
 input.form-check {
