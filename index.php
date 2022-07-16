@@ -3,7 +3,6 @@
     <head>
         <link rel="stylesheet" href="./assets/css/JetBrains-Mono.css">
         <link rel="stylesheet" href="./assets/css/main.css">
-        <link rel="stylesheet" href="./assets/css/radiobuttons.css">
         <link rel="stylesheet" href="./assets/css/bootstrap-grid.css">
         <script src="assets/js/jquery-3.5.1.js"></script>
         <script src="https://kit.fontawesome.com/5a3c76bb3d.js" crossorigin="anonymous"></script>
