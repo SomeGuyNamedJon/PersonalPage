@@ -12,7 +12,7 @@
             $title = $img['title'];
             $image = $img['image'];
             $height = $img['height'];
-            $row = $img['image'];
+            $row = $img['row'];
             $imgId = strtolower(str_replace(' ', '', $title));
 
             if($row > $i){
@@ -22,7 +22,7 @@
 
             echo '<div class="col">';
             echo "<h2>$title</h2>";
-            echo '<img id="'.$imgId.'" src="'.$image.'" alt="'.$title.'" height="'.$height.'"></div>';
+            echo '<div align="center"><img id="'.$imgId.'" src="'.$image.'" alt="'.$title.'" height="'.$height.'"></div></div>';
         }
         echo '</div>';
     }
