@@ -2,7 +2,7 @@
 
 @import url("./form.css");
 @import url("./table.css");
-@import url("./navbars.css");
+@import url("./navigation.css");
 @import url("./radiobuttons.css");
 @import url("./comments.css");
 @import url("./bootstrap-grid.css");
@@ -33,18 +33,6 @@ dt {
     font-style: italic;
 }
 
-/*img {
-    -webkit-filter: drop-shadow(1px 1px 1px white)
-                drop-shadow(-1px 1px 1px white)
-                drop-shadow(1px -1px 1px white)
-                drop-shadow(-1px -1px 1px white);
-
-    filter: drop-shadow(1px 1px 1px white)
-            drop-shadow(-1px 1px 1px white)
-            drop-shadow(1px -1px 1px white)
-            drop-shadow(-1px -1px 1px white);
-}*/
-
 .title {
     position: relative;
     font-size: max(25px, 3.5vw);
@@ -52,14 +40,6 @@ dt {
     color: #744fca;
     text-shadow: 4px 6px #222;
     z-index: 1;
-}
-
-.iconContainer {
-    position: relative;
-    display: inline-block;
-    top: 1.25vw;
-    left: 4vw;
-    z-index: 0;
 }
 
 .favIcon {
@@ -71,17 +51,6 @@ dt {
 .foot {
     text-align: center;
     color: #a0a0a0;
-}
-
-.socialLink {
-    display: inline-block;
-    background-color:#444;
-    border-radius: 50px;
-    width: 100%;
-}
-
-.socialLink:hover{
-    background-color: #555;
 }
 
 #neofetch {
