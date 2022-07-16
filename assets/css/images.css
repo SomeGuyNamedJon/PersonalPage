@@ -1,0 +1,19 @@
+#mysystem {
+    background-color: #222;
+    border-radius: 5px;
+}
+
+#myface {
+    border-radius: 5px;
+}
+
+#commonbashcommands{
+    -webkit-filter: drop-shadow(1px 1px 0px white)
+                    drop-shadow(-1px 1px 0px white)
+                    drop-shadow(1px -1px 0px white)
+                    drop-shadow(-1px -1px 0px white);
+    filter: drop-shadow(1px 1px 0px white)
+            drop-shadow(-1px 1px 0px white)
+            drop-shadow(1px -1px 0px white)
+            drop-shadow(-1px -1px 0px white);
+}

@@ -2,6 +2,7 @@
 
 @import url("./form.css");
 @import url("./table.css");
+@import url("./images.css");
 @import url("./navigation.css");
 @import url("./radiobuttons.css");
 @import url("./comments.css");
@@ -51,13 +52,4 @@ dt {
 .foot {
     text-align: center;
     color: #a0a0a0;
-}
-
-#neofetch {
-    background-color: #222;
-    border-radius: 5px;
-}
-
-#myFace {
-    border-radius: 5px;
 }
