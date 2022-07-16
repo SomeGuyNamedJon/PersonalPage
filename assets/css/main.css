@@ -1,9 +1,13 @@
 @charset "utf-8";
 
 @import url("./form.css");
+@import url("./table.css");
 @import url("./navbars.css");
 @import url("./radiobuttons.css");
 @import url("./comments.css");
+@import url("./bootstrap-grid.css");
+@import url("./bootstrap-grid.css.map");
+@import url("./JetBrains-Mono.css");
 
 body {
     color: white;
@@ -24,28 +28,6 @@ input[type=date]{
 hr {
     border: 1px dashed grey;
     width: 75%;
-}
-
-table {
-    border-spacing: 1px;
-    border-collapse: separate;
-}
-
-td, th {
-    border: none;
-    color: white;
-    padding-inline: 6px;
-}
-
-tr:nth-child(even){background-color: #1f2223;}
-tr:nth-child(odd){background-color: #181A1B;}
-
-th {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    text-align: center;
-    background-color: #673ab7;
-    color: white;
 }
 
 dt {
@@ -97,6 +79,10 @@ dt {
     background-color:#444;
     border-radius: 50px;
     width: 100%;
+}
+
+.socialLink:hover{
+    background-color: #555;
 }
 
 #neofetch {
