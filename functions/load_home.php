@@ -22,7 +22,7 @@
 
             echo '<div class="col">';
             echo "<h2>$title</h2>";
-            echo '<img id="'.$imgId.'" src="'.$image.'" alt="'.$title.'" height="$height"></div>';
+            echo '<img id="'.$imgId.'" src="'.$image.'" alt="'.$title.'" height="'.$height.'"></div>';
         }
         echo '</div>';
     }
