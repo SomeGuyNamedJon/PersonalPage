@@ -11,6 +11,7 @@
         while($img = mysqli_fetch_assoc($result)){
             $title = $img['title'];
             $image = $img['image'];
+            $height = $img['height'];
             $row = $img['image'];
             $imgId = strtolower(str_replace(' ', '', $title));
 
@@ -21,7 +22,7 @@
 
             echo '<div class="col">';
             echo "<h2>$title</h2>";
-            echo '<img id="'.$imgId.'" src="'.$image.'" alt="'.$title.'" height="350"></div>';
+            echo '<img id="'.$imgId.'" src="'.$image.'" alt="'.$title.'" height="$height"></div>';
         }
         echo '</div>';
     }
