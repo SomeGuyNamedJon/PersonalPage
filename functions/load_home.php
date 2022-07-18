@@ -57,7 +57,6 @@
                 if($bulk)
                     echo "<p>$bulk</p>";
 
-                echo '<div class="row">';
                 $sql = "select * from `about_bulletpoints` where `title_id`=$id";
                 $subresult = $dblink->query($sql) or die("Something went wrong with $sql");
                 while($bulletpoint = mysqli_fetch_assoc($subresult)){
@@ -71,7 +70,7 @@
                         echo "<li>$desc</li>";
                     }
                 }
-                echo "</div></$type>";
+                echo "</$type>";
             }
         }
     }
