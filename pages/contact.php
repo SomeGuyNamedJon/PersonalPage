@@ -15,6 +15,16 @@
             })
         }
 
+        function getLinks(){
+            $.ajax({
+                type:'post',
+                url:'../components/contactLinks.php',
+                success:function(data){
+                    $('#contactLinks').html(data);
+                }
+            })
+        }
+
         function updateSubContent(page){
             sessionStorage.setItem("submitPage", page);
             buildSubBar(page, "assets/json/contactSubNav.json");
@@ -28,6 +38,8 @@
             })
         }
 
+        getLinks();
+
         var currentPage = sessionStorage.getItem("submitPage");
 
         if(currentPage !== null)
@@ -40,9 +52,7 @@
     <div id="container">
         <div id="subBar"></div>    
         <div id="subContent"></div>
-        <?php
-            include("../components/contactLinks.php");
-        ?>
+        <div id="contactLinks"></div>
     </div>
     </body>
 </html>
