@@ -1,0 +1,28 @@
+{
+    "default" : {
+        "page" : "home",
+        "iconStyle" : "fa-solid"
+    },
+    "data" : {
+        "home" : {
+                    "icon" : "fa-house",
+                    "function" : "updateContent('home')"
+                },
+        "school" : {
+                    "icon" : "fa-graduation-cap",
+                    "function" : "updateContent('school')"
+                },
+        "work" : {
+                    "icon" : "fa-briefcase",
+                    "function" : "updateContent('work')"
+                },
+        "contact" :{
+                    "icon" : "fa-address-book",
+                    "function" : "updateContent('contact')"
+                },
+        "comments" : {
+                    "icon" : "fa-comments",
+                    "function" : "updateContent('comments')"
+                }
+    }
+}

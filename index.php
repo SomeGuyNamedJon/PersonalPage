@@ -19,11 +19,14 @@
 		</div>
             </div>
             <script>
-                function updateNavBar(page){
+                function buildNavBar(page, file){
                     $.ajax({
                         type:'post',
                         url:'components/navbar.php',
-                        data:{active : page},
+                        data:{
+                            active : page, 
+                            content : file
+                        },
                         success:function(data){
                             $('#navBar').html(data);
                         }
@@ -32,7 +35,7 @@
 
                 function updateContent(page){
                     sessionStorage.setItem("page", page);
-                    updateNavBar(page);
+                    buildNavBar(page, "assets/json/mainNav.json");
                     
                     $.ajax({
                         type:'post',

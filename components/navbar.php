@@ -1,53 +1,24 @@
 <?php
-    switch($_POST['active']){
-        case 'school':
-            $school='active';
-            break;
-        case 'work':
-            $work='active';
-            break;
-        case 'contact':
-            $contact='active';
-            break;
-        case 'comments':
-            $comments='active';
-            break;
-        default:
-            $home='active';
+    $navContent = file_get_contents("../".$_POST['content']) or die("Nav bar file does not exist or not specified");
+    $navContent = json_decode($navContent, true);
+    $data = $navContent['data'];
+    $default = $navContent['default'];
+
+    if(isset($_POST['active']))
+        $active = $_POST['active'];
+    else
+        $active = $default['page'];
+
+    echo '<div class="container"><div class="row navBar">';
+
+    foreach($data as $page => $entry){
+        echo '<div class="col">
+            <a id="'.$page.'" href="#" class="navButton '.(($page === $active) ? "active" : "").'" onclick="'.$entry['function'].';event.preventDefault()">
+                <i class="'.$default['iconStyle'].' '.$entry['icon'].'"></i><br>
+                '.$page.'
+            </a>
+        </div>';
     }
 
-    echo '<div class="container">
-        <div class="row navBar">
-                <div class="col">
-                    <a id="home" href="#" class="navButton '.$home.'" onclick="updateContent(\'home\');event.preventDefault()">
-                        <i class="fa-solid fa-house"></i><br>
-                        Home
-                    </a>
-                </div>
-                <div class="col">
-                    <a id="school" href="#" class="navButton '.$school.'" onclick="updateContent(\'school\');event.preventDefault()">
-                        <i class="fa-solid fa-graduation-cap"></i><br>
-                        School
-                    </a>
-                </div>
-                <div class="col">
-                    <a id="work" href="#" class="navButton '.$work.'" onclick="updateContent(\'work\');event.preventDefault()">
-                        <i class="fa-solid fa-briefcase"></i><br>
-                        Work
-                    </a>
-                </div>
-                <div class="col">
-                    <a id="contact" href="#" class="navButton '.$contact.'" onclick="updateContent(\'contact\');event.preventDefault()">
-                        <i class="fa-solid fa-address-book"></i><br>    
-                        Contact
-                    </a>
-                </div>
-                <div class="col">
-                    <a id="comments" href="#" class="navButton '.$comments.'" onclick="updateContent(\'comments\');event.preventDefault()">
-                        <i class="fa-solid fa-comments"></i><br>    
-                        Comments
-                    </a>
-                </div>
-            </div>
-    </div>';
+    echo '</div></div>';
 ?>
