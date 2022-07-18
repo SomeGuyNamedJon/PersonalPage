@@ -129,6 +129,8 @@ $('#submitBtn').on('click',function(){
                     commentHelp.innerHTML = "Comment contains invalid character(s) % * : ; $";
                 }
             }else if(data.includes("Success")){
+                window.scrollTo(0,0);
+
                 successBox.innerHTML = "Your submission was successfully recorded";
                 successBox.classList.add("success-box");
 
