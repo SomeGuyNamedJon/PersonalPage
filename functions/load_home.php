@@ -52,7 +52,10 @@
                 echo "<ul><p>$bulk</b></ul>";
             else{
 
-                echo "<$type><p>$bulk</p>";
+                echo "<$type>";
+                
+                if($bulk)
+                    echo "<p>$bulk</p>";
 
                 echo '<div class="row">';
                 $sql = "select * from `about_bulletpoints` where `title_id`=$id";
