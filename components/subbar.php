@@ -1,25 +1,24 @@
 <?php
-    switch($_POST['active']){
-        case 'Comment':
-            $comment='active';
-            break;
-        case 'Info':
-            $info='active';
-            break;
+    $navContent = file_get_contents("../".$_POST['content']) or die("Nav bar file does not exist or not specified");
+    $navContent = json_decode($navContent, true);
+    $data = $navContent['data'];
+    $default = $navContent['default'];
+
+    if(isset($_POST['active']))
+        $active = $_POST['active'];
+    else
+        $active = $default['page'];
+
+    echo '<div class="row subBar">';
+
+    foreach($data as $page => $entry){
+        echo '<div class="col">
+            <a id="'.$page.'" href="#" class="subButton '.(($page === $active) ? "active" : "").'" onclick="'.$entry['function'].';event.preventDefault()">
+                <i class="'.$default['iconStyle'].' '.$entry['icon'].'"></i>
+                '.$entry['name'].'
+            </a>
+        </div>';
     }
 
-    echo '<div class="row subBar">
-                <div class="col">
-                    <a id="CommentForm" href="#" class="subButton '.$comment.'" onclick="updateSubContent(\'Comment\');event.preventDefault()">
-                        <i class="fa-solid fa-comment-dots"></i>    
-                        Comment
-                    </a>
-                </div>
-                <div class="col">
-                    <a id="InfoForm" href="#" class="subButton '.$info.'" onclick="updateSubContent(\'Info\');event.preventDefault()">
-                        <i class="fa-solid fa-pen-to-square"></i>    
-                        Contact Info
-                    </a>
-                </div>
-            </div>';
+    echo '</div>'; 
 ?>

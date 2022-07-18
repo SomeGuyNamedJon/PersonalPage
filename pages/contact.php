@@ -1,11 +1,14 @@
 <html>
     <body>
     <script>
-        function updateSubBar(page){  
+        function buildSubBar(page, file){  
             $.ajax({
                 type:'post',
                 url:'../components/subbar.php',
-                data:{active : page},
+                data:{
+                    active : page,
+                    content : file
+                },
                 success:function(data){
                     $('#subBar').html(data);
                 }
@@ -14,7 +17,7 @@
 
         function updateSubContent(page){
             sessionStorage.setItem("submitPage", page);
-            updateSubBar(page);
+            buildSubBar(page, "assets/json/contactSubNav.json");
 
             $.ajax({
                 type:'post',

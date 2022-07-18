@@ -1,0 +1,18 @@
+{
+    "default" : {
+        "page" : "comment",
+        "iconStyle" : "fa-solid"
+    },
+    "data" : {
+        "Comment" : {
+                    "name" : "Comment",
+                    "icon" : "fa-comment-dots",
+                    "function" : "updateSubContent('Comment')"
+                },
+        "Info" : {
+                    "name" : "Contact Info",
+                    "icon" : "fa-pen-to-square",
+                    "function" : "updateSubContent('Info')"
+                }
+    }
+}
