@@ -5,22 +5,27 @@
     },
     "data" : {
         "home" : {
+                    "name" : "Home",
                     "icon" : "fa-house",
                     "function" : "updateContent('home')"
                 },
         "school" : {
+                    "name" : "School",
                     "icon" : "fa-graduation-cap",
                     "function" : "updateContent('school')"
                 },
         "work" : {
+                    "name" : "Work",
                     "icon" : "fa-briefcase",
                     "function" : "updateContent('work')"
                 },
         "contact" :{
+                    "name" : "Contact",
                     "icon" : "fa-address-book",
                     "function" : "updateContent('contact')"
                 },
         "comments" : {
+                    "name" : "Comments",
                     "icon" : "fa-comments",
                     "function" : "updateContent('comments')"
                 }

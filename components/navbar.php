@@ -15,7 +15,7 @@
         echo '<div class="col">
             <a id="'.$page.'" href="#" class="navButton '.(($page === $active) ? "active" : "").'" onclick="'.$entry['function'].';event.preventDefault()">
                 <i class="'.$default['iconStyle'].' '.$entry['icon'].'"></i><br>
-                '.$page.'
+                '.$entry['name'].'
             </a>
         </div>';
     }
