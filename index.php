@@ -55,7 +55,7 @@
                 
             </script>
 
-            <div id="navBar"></div>          
+            <div class="container" id="navBar"></div>          
             <div class="container" id="mainContent"></div>
             <br>
             <div class="row">

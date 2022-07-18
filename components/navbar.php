@@ -9,7 +9,7 @@
     else
         $active = $default['page'];
 
-    echo '<div class="container"><div class="row navBar">';
+    echo '<div class="row navBar">';
 
     foreach($data as $page => $entry){
         echo '<div class="col">
@@ -20,5 +20,5 @@
         </div>';
     }
 
-    echo '</div></div>';
+    echo '</div>';
 ?>
