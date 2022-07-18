@@ -2,7 +2,7 @@
     include('database.php');
     $dblink=dbconnect('web_tech');
 
-    $sql = "select * from `home_img`";
+    $sql = "select * from `home_img` order by `row`";
     $result = $dblink->query($sql) or die("Something went wrong with $sql");
 
     if($result->num_rows != 0){
