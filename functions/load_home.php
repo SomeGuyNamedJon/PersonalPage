@@ -71,7 +71,7 @@
                         echo "<li>$desc</li>";
                     }
                 }
-                echo "</$type></div>";
+                echo "</div></$type>";
             }
         }
     }
