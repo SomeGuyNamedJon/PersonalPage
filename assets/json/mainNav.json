@@ -5,8 +5,8 @@
     },
     "data" : {
         "home" : {
-                    "name" : "Home",
-                    "icon" : "fa-house",
+                    "name" : "About",
+                    "icon" : "fa-user-graduate",
                     "function" : "updateContent('home')"
                 },
         "school" : {
