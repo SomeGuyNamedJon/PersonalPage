@@ -1,75 +1,70 @@
-<?php
-    echo '<br>';
+<br>
+<div class="row">
+    <p id="successBox"></p>
+</div>
 
-    echo '<div class="row">
-            <p id="successBox"></p>
-        </div>';
+<div class="form">
+    <div id="fnameBox">
+        <label>First Name</label>
+        <input class="form-input" type="text" id="fname" name="fname">
+        <p class="help-block" id="fnameHelp"></p>
+    </div>
 
-    echo '<div class="form">';
+    <div id="lnameBox">
+        <label>Last Name</label>
+        <input class="form-input" type="text" id="lname" name="lname">
+        <p class="help-block" id="lnameHelp"></p>
+    </div>
 
-        echo '<div id="fnameBox">
-                <label>First Name</label>
-                <input class="form-input" type="text" id="fname" name="fname">
-                <p class="help-block" id="fnameHelp"></p>
-            </div>';
+    <div id="emailBox">
+        <label>Email</label>
+        <input class="form-input" type="text" id="email" name="email">
+        <p class="help-block" id="emailHelp"></p>
+    </div>
 
-        echo '<div id="lnameBox">
-                <label>Last Name</label>
-                <input class="form-input" type="text" id="lname" name="lname">
-                <p class="help-block" id="lnameHelp"></p>
-            </div>';
+    <div id="phoneBox">
+        <label>Phone Number</label>
+        <input class="form-input" type="text" id="phone" name="phone">
+        <p class="help-block" id="phoneHelp"></p>
+    </div>
+
+    <div id="dobBox">
+        <label>Date of Birth</label>
+        <input class="form-input" type="date" id="dob" name="dob">
+        <p class="help-block" id="dobHelp"></p>
+    </div>
+
+    <div id="contactBox">
+        <label>Prefered Contact Method</label>
+        <div class="row">
+            <div class="col" align="center">
+                <label for="contact-Email">
+                <input class="form-radio" type="radio" id="contact-Email" name="contact" value="Email">                      
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M464 64C490.5 64 512 85.49 512 112C512 127.1 504.9 141.3 492.8 150.4L275.2 313.6C263.8 322.1 248.2 322.1 236.8 313.6L19.2 150.4C7.113 141.3 0 127.1 0 112C0 85.49 21.49 64 48 64H464zM217.6 339.2C240.4 356.3 271.6 356.3 294.4 339.2L512 176V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V176L217.6 339.2z"/></svg>
+                </label>
+            </div>
+            <div class="col" align="center">
+                <label for="contact-Phone">
+                <input class="form-radio" type="radio" id="contact-Phone" name="contact" value="Phone">                      
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M511.2 387l-23.25 100.8c-3.266 14.25-15.79 24.22-30.46 24.22C205.2 512 0 306.8 0 54.5c0-14.66 9.969-27.2 24.22-30.45l100.8-23.25C139.7-2.602 154.7 5.018 160.8 18.92l46.52 108.5c5.438 12.78 1.77 27.67-8.98 36.45L144.5 207.1c33.98 69.22 90.26 125.5 159.5 159.5l44.08-53.8c8.688-10.78 23.69-14.51 36.47-8.975l108.5 46.51C506.1 357.2 514.6 372.4 511.2 387z"/></svg>
+                </label>
+            </div>
+        </div>
+        <p class="help-block" id="contactHelp"></p>        
+    </div>
+
+    <div id="commentBox">
+        <label>Comment (optional)</label>
+        <textarea class="form-input" id="comment" name="comment" rows="10"></textarea>
+        <p class="help-block" id="commentHelp"></p>
+    </div>
     
-        echo '<div id="emailBox">
-                <label>Email</label>
-                <input class="form-input" type="text" id="email" name="email">
-                <p class="help-block" id="emailHelp"></p>
-            </div>';
-    
-        echo '<div id="phoneBox">
-                <label>Phone Number</label>
-                <input class="form-input" type="text" id="phone" name="phone">
-                <p class="help-block" id="phoneHelp"></p>
-            </div>';
-    
-        echo '<div id="dobBox">
-                <label>Date of Birth</label>
-                <input class="form-input" type="date" id="dob" name="dob">
-                <p class="help-block" id="dobHelp"></p>
-            </div>';
-    
-        echo '<div id="contactBox">
-                <label>Prefered Contact Method</label>
-                <div class="row">
-                    <div class="col" align="center">
-                        <label for="contact-Email">
-                        <input class="form-radio" type="radio" id="contact-Email" name="contact" value="Email">                      
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M464 64C490.5 64 512 85.49 512 112C512 127.1 504.9 141.3 492.8 150.4L275.2 313.6C263.8 322.1 248.2 322.1 236.8 313.6L19.2 150.4C7.113 141.3 0 127.1 0 112C0 85.49 21.49 64 48 64H464zM217.6 339.2C240.4 356.3 271.6 356.3 294.4 339.2L512 176V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V176L217.6 339.2z"/></svg>
-                        </label>
-                    </div>
-                    <div class="col" align="center">
-                        <label for="contact-Phone">
-                        <input class="form-radio" type="radio" id="contact-Phone" name="contact" value="Phone">                      
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M511.2 387l-23.25 100.8c-3.266 14.25-15.79 24.22-30.46 24.22C205.2 512 0 306.8 0 54.5c0-14.66 9.969-27.2 24.22-30.45l100.8-23.25C139.7-2.602 154.7 5.018 160.8 18.92l46.52 108.5c5.438 12.78 1.77 27.67-8.98 36.45L144.5 207.1c33.98 69.22 90.26 125.5 159.5 159.5l44.08-53.8c8.688-10.78 23.69-14.51 36.47-8.975l108.5 46.51C506.1 357.2 514.6 372.4 511.2 387z"/></svg>
-                        </label>
-                    </div>
-                </div>
-                <p class="help-block" id="contactHelp"></p>        
-            </div>';
+    <button class="btn" id="submitBtn">
+        <i class="fa-solid fa-circle-check"></i> Submit
+    </button>
+    <div class="ans-box" id="values"></div>
 
-        echo '<div id="commentBox">
-                <label>Comment (optional)</label>
-                <textarea class="form-input" id="comment" name="comment" rows="10"></textarea>
-                <p class="help-block" id="commentHelp"></p>
-            </div>';
-        
-        echo '<button class="btn" id="submitBtn">
-            <i class="fa-solid fa-circle-check"></i>
-            Submit
-        </button>';
-        echo '<div class="ans-box" id="values"></div>';
-
-    echo '</div>';
-?>
+</div>
 
 <script>
 $('#submitBtn').on('click',function(){
