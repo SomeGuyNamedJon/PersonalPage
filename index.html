@@ -38,8 +38,8 @@
                     buildNavBar(page, "assets/json/mainNav.json");
                     
                     $.ajax({
-                        type:'post',
-                        url:'pages/'+page+'.php',
+                        type:'get',
+                        url:'pages/'+page+'.html',
                         success:function(data){
                             $('#mainContent').html(data);
                         }

@@ -17,8 +17,8 @@
 
         function getLinks(){
             $.ajax({
-                type:'post',
-                url:'../components/contactLinks.php',
+                type:'get',
+                url:'../components/contactLinks.html',
                 success:function(data){
                     $('#contactLinks').html(data);
                 }
@@ -30,8 +30,8 @@
             buildSubBar(page, "assets/json/contactSubNav.json");
 
             $.ajax({
-                type:'post',
-                url:'../components/submit'+page+'.php',
+                type:'get',
+                url:'../components/submit'+page+'.html',
                 success:function(data){
                     $('#subContent').html(data);
                 }
