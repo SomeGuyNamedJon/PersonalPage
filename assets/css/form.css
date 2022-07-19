@@ -33,6 +33,10 @@
     outline: none;
 }
 
+.form-err input[type=radio] + svg{
+    fill: #ff2222;
+}
+
 .form-err label{
     color: #ff2222;
 }
