@@ -13,5 +13,4 @@ I'm using this currently as a resume of sorts. Almost entirely data driven; I'm 
 As it is my latest, I would also consider this my best work.
 
 ## TBD//:
-Small tweaks here and there, I'm looking next to implement monads for my buisiness logic since it's still a bit messy in parts.
-I also would like to build an api for managing site content. I may end up building it in php like I have for my CompanyEquipment project, but perhaps I'll do some research into something else to extend the breadth of languages for this project.
+Build api and tweak things here and there.
