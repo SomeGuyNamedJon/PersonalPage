@@ -20,13 +20,15 @@
 		</div>
             </div>
             <script>
-                $.ajax({
-                    type:'post',
-                    url:'components/counter.php',
-                    success:function(data){
-                        $('#counter').html(data);
-                    }
-                });
+                function updateCounter(){
+                    $.ajax({
+                        type:'post',
+                        url:'components/counter.php',
+                        success:function(data){
+                            $('#counter').html(data);
+                        }
+                    });
+                }
 
                 function buildNavBar(page, file){
                     $.ajax({
@@ -61,7 +63,11 @@
                     updateContent(currentPage);
                 else
                     updateContent("home");
-                
+
+                updateCounter();
+                setInterval(() => {
+                    updateCounter();
+                }, 100000);      
             </script>
 
             <div class="container" id="navBar"></div>          
