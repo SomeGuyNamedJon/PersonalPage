@@ -8,7 +8,7 @@ if (!file_exists($counterFile)) {
     $template = array(
         "total" => 1,
         "hosts" => array(
-            $ip => $client
+            $ip => [$client]
         )
     );
     file_put_contents($counterFile, json_encode($template), LOCK_EX) or die("Can't create file");
@@ -19,8 +19,10 @@ $countData = json_decode($countData, true);
 
 if(!in_array($ip, array_keys($countData['hosts']))){
     $countData['total']++;
-    $countData['hosts'][$ip] = $client;
-
+    $countData['hosts'][$ip] = [$client];
+    file_put_contents($counterFile, json_encode($countData), LOCK_EX);
+}elseif(!in_array($client, $countData['hosts'][$ip])){
+    $countData['hosts'][$ip][] = $client;
     file_put_contents($counterFile, json_encode($countData), LOCK_EX);
 }
 
