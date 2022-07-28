@@ -9,3 +9,6 @@ google*.html
 
 # testing page
 test/*
+
+# dynamically updated files
+assets/json/counter.json

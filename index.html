@@ -8,6 +8,7 @@
     </head>
     <body>
         <div class="container-fluid">
+        <div id="counter"></div>
 	    <div class="row justify-content-center">
 		<div class="col-sm-1">
 			<div class="iconContainer">
@@ -19,6 +20,14 @@
 		</div>
             </div>
             <script>
+                $.ajax({
+                    type:'post',
+                    url:'components/counter.php',
+                    success:function(data){
+                        $('#counter').html(data);
+                    }
+                });
+
                 function buildNavBar(page, file){
                     $.ajax({
                         type:'post',
