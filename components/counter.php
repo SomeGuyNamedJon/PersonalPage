@@ -31,5 +31,5 @@ if(!isset($_SESSION['loaded'])){
 }
 
 $count = $countData['total'];
-echo "$count visitors";
+echo "$count";
 ?>

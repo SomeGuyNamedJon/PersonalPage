@@ -12,17 +12,17 @@
 body {
     color: white;
     background-color: #333333;
-    font-family: JetBrains Mono, Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Iosevka Nerd Font Mono', JetBrains Mono, Verdana, Geneva, Tahoma, sans-serif;
     overflow-x: hidden;
 }
 
 textarea {
     resize: none;
-    font-family: JetBrains Mono, Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Iosevka Nerd Font Mono', JetBrains Mono, Verdana, Geneva, Tahoma, sans-serif;
 }
 
 input[type=date]{
-    font-family: JetBrains Mono, Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Iosevka Nerd Font Mono', JetBrains Mono, Verdana, Geneva, Tahoma, sans-serif;
 }
 
 hr {
@@ -52,4 +52,17 @@ dt {
 .foot {
     text-align: center;
     color: #a0a0a0;
+}
+
+#counter {
+    font-size: large;
+    font-weight: 900;
+    text-align: center;
+    text-transform: capitalize;
+    color:#fff;
+    background-color: #744fca;
+    border-radius: 15px;
+    padding: 0.5vw;
+    padding-inline: 2.5vw;
+    width: max-content;
 }
