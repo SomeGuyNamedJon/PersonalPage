@@ -1,7 +1,7 @@
 <?php
     include('database.php');
     $dblink=dbconnect('web_tech');
-    $sql = "select * from `contact_info` where `comment` is not null";
+    $sql = "select * from `contact_info` where `comment` is not null order by `auto_id` desc";
     $result = $dblink->query($sql) or die("Something went wrong with $sql");
 
     echo '<br>';
