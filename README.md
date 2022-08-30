@@ -1,7 +1,7 @@
 ![](https://cdn.discordapp.com/attachments/687235721127526412/989901538350747708/favicon.ico)
 
 # PersonalPage
-### This is repo is my personal web page hosted at https://jonathanvillarreal.dev
+### Page currently taken offline to save on AWS costs. Might look into converting this project into a static site for github pages
 
 ## About:
 This is a spruced up capstone assignment for my Web Technologies class during my final semester at Uni.
