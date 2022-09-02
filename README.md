@@ -14,5 +14,5 @@ I'm using this currently as a resume of sorts. Almost entirely data driven; I'm 
 As it is my latest, I would also consider this my best work.
 
 ## ~~TBD//:~~
-~~Build api and tweak things here and there.~~
-Project will lie dormant for now. Still figuring out API routing with apache .htaccess instead of NGINX
+### ~~Build api and tweak things here and there.~~
+### Project will lie dormant for now. Still figuring out API routing with apache .htaccess instead of NGINX
