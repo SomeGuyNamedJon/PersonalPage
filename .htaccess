@@ -1,0 +1,40 @@
+# DEFAULTS
+ServerSignature Off
+AddDefaultCharset UTF-8
+DefaultLanguage en-US
+SetEnv SERVER_ADMIN jonathanvillarreal1995@proton.me
+FileETag None
+ServerTokens prod
+ServerSignature Off
+
+# Rewrites
+RewriteEngine On
+RewriteBase /
+
+# API Rewrite
+RewriteCond %{REQUEST_URI} api
+RewriteRule ^api/(.*) api/index.php [QSA]
+
+# Cache media files
+<filesMatch "\.(gif|jpg|jpeg|png|ico|swf|js)$">
+Header set Cache-Control "max-age=2592000, public"
+</filesMatch>
+
+<FilesMatch "\.(js|css|pdf|swf)$">
+Header set Cache-Control "max-age=604800"
+</FilesMatch>
+
+<FilesMatch "\.(html|htm|txt)$">
+Header set Cache-Control "max-age=600"
+</FilesMatch>
+
+# DONT CACHE
+<FilesMatch "\.(pl|php|cgi|spl|scgi|fcgi)$">
+Header unset Cache-Control
+</FilesMatch>
+
+# Deny access to .htaccess
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>

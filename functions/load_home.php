@@ -1,6 +1,10 @@
 <?php
     include('database.php');
+<<<<<<< HEAD
     $dblink=dbconnect('web_tech');
+=======
+    $dblink=dbconnect('epiz_32266982_personal_page');
+>>>>>>> eca8300 (Migration to InfinityFree)
 
     $sql = "select * from `home_img` order by `row`";
     $result = $dblink->query($sql) or die("Something went wrong with $sql");
