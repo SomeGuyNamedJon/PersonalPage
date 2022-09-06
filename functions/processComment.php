@@ -1,11 +1,7 @@
 <?php
 
     include("database.php");
-<<<<<<< HEAD
-    $dblink = dbconnect("web_tech");
-=======
     $dblink = dbconnect("epiz_32266982_personal_page");
->>>>>>> eca8300 (Migration to InfinityFree)
 
     $fname = $_POST['fname'];
     $lname = $_POST['lname'];

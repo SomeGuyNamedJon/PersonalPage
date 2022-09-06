@@ -1,10 +1,6 @@
 <?php
     include('database.php');
-<<<<<<< HEAD
-    $dblink=dbconnect('web_tech');
-=======
     $dblink=dbconnect('epiz_32266982_personal_page');
->>>>>>> eca8300 (Migration to InfinityFree)
     $sql = "select * from `school_entries` order by `id` desc";
     $result = $dblink->query($sql) or die("Something went wrong with $sql");
 

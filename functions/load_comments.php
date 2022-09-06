@@ -1,10 +1,6 @@
 <?php
     include('database.php');
-<<<<<<< HEAD
-    $dblink=dbconnect('web_tech');
-=======
     $dblink=dbconnect('epiz_32266982_personal_page');
->>>>>>> eca8300 (Migration to InfinityFree)
     $sql = "select * from `contact_info` where `comment` is not null order by `auto_id` desc";
     $result = $dblink->query($sql) or die("Something went wrong with $sql");
 
